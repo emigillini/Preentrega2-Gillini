@@ -7,98 +7,105 @@
     <meta name="author" content="Emiliano Gillini">
     <meta name="description" content="Pagina Web de venta de ceramicas">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../styles/style4.css">
+    <link rel="stylesheet" href="../styles/style1.css">
     <link rel="shortcut icon" href="../img/favicon.jpg" type="image/x-icon">
     <title>Carolinska Tu mundo</title>
+
 </head>
 
 <body>
-    <header>   
+
+    <header>
+
         <div class="header1">
-        <div>
+        
+            <div>
 
-            <img class="imagen" src="../img/logo-caro-modified.png" alt="logo del sitio web" width="90" height="auto">
+                <img class="imagen" src="../img/logo-caro-modified.png" alt="logo del sitio web" width="90" height="auto">
 
+            </div>
+
+            <div class="headerfrase">
+            
+                <p>LE <span class="w1">DAMOS</span> COLOR <span class="w2">Y </span>ALEGRIA <span class="w3">A</span> TU <span class="w4">VIDA</span></p>
+
+        
+            </div>
+        
         </div>
-
-        <div class="headerfrase">
-            <p>LE <span class="w1">DAMOS</span> COLOR <span class="w2">Y </span>ALEGRIA <span class="w3">A</span> TU <span class="w4">VIDA</span></p>
-
-        </div>
-         </div>
-
 
     </header>
 
     <nav>
 
-
        <ul class="lista" >
 
-        <a href="../index.html" title="HOME"><li class="w6">HOME</li></a>
-        <a href="productos.html" title="PRODUCTOS"><li class="w1">PRODUCTOS</li></a>
-        <a href="nuestrahistoria.html" title="NUESTRA HISTORIA"><li class="historia w2">NUESTRA HISTORIA</li></a>
-        <a href="comunidad.html" title="COMUNIDAD"><li class="w3">COMUNIDAD</li></a>
-        <a href="contacto.html" title="CONTACTO"><li class="w4">CONTACTO</li></a>
-           
+            <a href="../index.html" title="HOME"><li class="w6">HOME</li></a>
+            <a href="productos.html" title="PRODUCTOS"><li class="w1">PRODUCTOS</li></a>
+            <a href="nuestrahistoria.html" title="NUESTRA HISTORIA"><li class="historia w2">NUESTRA HISTORIA</li></a>
+            <a href="comunidad.html" title="COMUNIDAD"><li class="w3">COMUNIDAD</li></a>
+            <a href="contacto.html" title="CONTACTO"><li class="w4">CONTACTO</li></a>
 
         </ul>
+    
     </nav>
 
-        <section >
+    <section >
 
-            <div class="formulario">
-                <h2><span class="w1">Formulario</span> de <span class="w2">contacto</span></h2>
-				
+        <div class="formulario">
+                
+            <h2><span class="w1">Formulario</span> de <span class="w2">contacto</span></h2>
+			
+            <form action="" method="post" enctype="multipart/form-data">
+                <p>
+                <label for="Nombre y Apellido"><span class="w6"> Nombre</span> y <span class="w3">apellido</span></label>
+                <input id= "Nombre y Apellido" name="Nombre y Apellido" type="text"placeholder="Escribe tu Nombre y Apellido"><br>
+                </p>
+                <p>
+                <label for="Edad"> <span class="w1">Edad</span></label>
+                <input id= "Edad" name="Edad" type="number"placeholder="Escribe tu edad">
+                </p>
+                <p>
+                <label for="Mail"> <span class="w4">Mail</span></label>
+                <input id= "Mail" name="Mail" type="email" placeholder="Escribe tu Mail">
+                </p>
+                <p>
+                <label for="Fecha de nacimiento"> <span class="w6">Fecha de nacimiento</span></label>
+                <input id= "Fecha de nacimiento" name="Fecha de nacimiento" type="date" >
+                </p>
+                <p>
+                <label for="Comentarios"> <span class="w1">Comentarios</span></label>
+                <textarea name="Comentarios" id="Comentarios" cols="30" rows="10" placeholder="Escribe tu Solicitud"></textarea>
+                </p>
 
-                <form action="" method="post" enctype="multipart/form-data">
-                    <p>
-                    <label for="Nombre y Apellido"><span class="w6"> Nombre</span> y <span class="w3">apellido</span></label>
-                    <input id= "Nombre y Apellido" name="Nombre y Apellido" type="text"placeholder="Escribe tu Nombre y Apellido"><br>
-                    </p>
-                    <p>
-                 <label for="Edad"> <span class="w1">Edad</span></label>
-                 <input id= "Edad" name="Edad" type="number"placeholder="Escribe tu edad">
-                  </p>
-                 <p>
-                  <label for="Mail"> <span class="w4">Mail</span></label>
-                  <input id= "Mail" name="Mail" type="email" placeholder="Escribe tu Mail">
-                  </p>
-                  <p>
-                   <label for="Fecha de nacimiento"> <span class="w6">Fecha de nacimiento</span></label>
-                  <input id= "Fecha de nacimiento" name="Fecha de nacimiento" type="date" >
-                  </p>
-                 <p>
-                  <label for="Comentarios"> <span class="w1">Comentarios</span></label>
-                  <textarea name="Comentarios" id="Comentarios" cols="30" rows="10" placeholder="Escribe tu Solicitud"></textarea>
-                  </p>
-
-                  <button type="submit" name="enviar " id="enviar"><p><span class="w2">Enviar</span></p></button>
-                  <button type="reset" name="Restablecer " id="Borrar"><p><span class="w6">Restablecer</span></p></button>
+                <button type="submit" name="enviar " id="enviar"><p><span class="w2">Enviar</span></p></button>
+                <button type="reset" name="Restablecer " id="Borrar"><p><span class="w6">Restablecer</span></p></button>
      
-                </form>
-            </div>
+            </form>
+
+        </div>
       
-        </section>
+    </section>
 
     <footer>
-
-        <nav class="pie">
-            <a href="https://www.facebook.com/" title="Link-Facebook" target="_blank"><i class= "w1 fa-brands fa-square-facebook" ></i></a>
-            <a href="https://www.instagram.com/" title="Link-Instagram" target="_blank"><i class=" w2 fa-brands fa-square-instagram"></i></a>
-            <a href="https://twitter.com/" title="Link-Twitter" target="_blank"><i class=" w3 fa-brands fa-square-twitter"></i></a>
-            <a href="https://web.whatsapp.com/" title="Link-Whatsapp" target="_blank"><i class=" w4 fa-brands fa-whatsapp"></i></a>
-        </nav>
-       
+        
+            <nav class="pie">
+    
+                <a href="https://www.facebook.com/" title="Link-Facebook" target="_blank"><i class= "w1 fa-brands fa-square-facebook" ></i></a>
+                <a href="https://www.instagram.com/" title="Link-Instagram" target="_blank"><i class=" w2 fa-brands fa-square-instagram"></i></a>
+                <a href="https://twitter.com/" title="Link-Twitter" target="_blank"><i class=" w3 fa-brands fa-square-twitter"></i></a>
+                <a href="https://web.whatsapp.com/" title="Link-Whatsapp" target="_blank"><i class=" w4 fa-brands fa-whatsapp"></i></a>
             
-       <marquee class="w7" behavior="alternate" direction="right">CONOCE NUESTROS PRODUCTOS</marquee>
-       <p class="derechos">© 2022 Carolinska. Todos los derechos reservados.</p>
-
-        <a href="#" class="subir">
-        <i class="fa-sharp fa-solid fa-circle-up"></i>
-        </a>
-
+            </nav>
+           
+           <marquee class="w7" behavior="alternate" direction="right">CONOCE NUESTROS PRODUCTOS</marquee>
+           
+           <p class="derechos">© 2022 Carolinska. Todos los derechos reservados.</p>
+    
+           <a href="#" class="subir"><i class="fa-sharp fa-solid fa-circle-up"></i></a>
+    
     </footer>
-
+    
 </body>
+    
 </html>
