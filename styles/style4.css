@@ -14,11 +14,9 @@ html{
 body{
     background-image: url(../img/black-coffee-g525cfe77a_1280.jpg ) ;
     background-size: cover;
-    
-
 }
+
 header{ 
-    
     height: auto;
     width: auto;
     background-color: #11f1a6;
@@ -26,33 +24,27 @@ header{
     padding: 10px;
     font-family: 'Shadows Into Light';
     border: 1px solid black;    
-   
 }
 
 .header1{
     display: flex;
-    flex-wrap: nowrap;
-    
+    flex-wrap: nowrap; 
 }
+
 .header1 img{
     flex: 1;
     width: 100px;
     animation-name: ampliacion;
     animation-duration: 4s;
-    
-    
-
 }
 
 @keyframes ampliacion {
     from {right: 100% ;
         width: 200%;
-    }
- 
-    
+    } 
 }
+
 .headerfrase{
-    
     font-size: 18px;
     align-self: center;
     text-align: center;
@@ -62,10 +54,8 @@ header{
     transform: rotate(6deg);
     animation-name: aparicion;
     animation-duration: 10s;
-    
-   
-
 }
+
 @keyframes aparicion {
    0% {
     opacity: 0;
@@ -73,12 +63,11 @@ header{
    50%{
     opacity: 0;
    }
- 100%{
+   100%{
     opacity: 1;
  }
     
 }
-
 
 nav{
     background-color: #11f1a6;
@@ -87,22 +76,17 @@ nav{
     border: 1px solid black;
     animation-name: ampliacion;
     animation-duration: 5s;
-    
-    
-
 }
+
 @keyframes ampliacion {
     from {right: 100% ;
         width: 200%;
     }
 }
 
-
 nav .lista{
     display: flex;
     flex-direction: column;
-    
-  
 }
 
 li {
@@ -113,8 +97,6 @@ li {
     text-align: center;
     font-weight: 900;
     text-decoration: none;
-    
-    
 }
 
 a{
@@ -124,17 +106,16 @@ a{
 a:hover{ 
     text-shadow: 3px 3px 3px black;
 }
+
 section{
-width: auto;
-height: auto;
-font-weight: 900;
-margin: 1cm;
+    width: auto;
+    height: auto;
+    font-weight: 900;
+    margin: 10px;
+    margin-bottom: 30px;
 }
 
-
 form {
-    
-    
     background-color: #fbfbfb; 
     border-top: 3px dotted green;
     border-bottom: 2px dotted blue;
@@ -147,26 +128,26 @@ form {
 	padding:16px;
 	border-radius:10px;
 	margin:auto;
-    
-	
-
 }
 
-h2{
-	font-size: 30px;  
-	text-align: center; 
-	padding-bottom: 10px; 
-    font-family: 'Shadows Into Light';
+h1{ 
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    box-shadow: 10px 5px 5px black;    
 }
 
 label{
     display: block; 
     font-family: 'Shadows Into Light';
     text-shadow: 10px 5px 10px gold;   
-   
 }
 
-  input{ 
+input{ 
     background-color: #fbfbfb; 
     width: 100%; 
 	height: auto; 
@@ -181,15 +162,13 @@ label{
     font-family: 'Shadows Into Light';
     box-shadow: 10px 5px 5px black;
     font-size: 18px;
-   
-    
 }
 
 input:hover{
     transform: scale(1.06);
 }
 
-  textarea{
+textarea{
     background-color: #fbfbfb; 
     width: 100%; 
     height: 100px; 
@@ -206,11 +185,12 @@ input:hover{
     box-shadow: 10px 5px 5px black;
     font-size: 18px;
 }
+
 textarea:hover{
     transform: scale(1.06);
 }
 
-  button{
+button{
     font-size: 15px;
     height: 50px; 
     border-radius: 10px;  
@@ -225,34 +205,39 @@ textarea:hover{
     font-family: 'Shadows Into Light';
     text-shadow: 10px 5px 5px gold ; 
     margin-right: 1cm;
-     
 }
 
 .w1 {
     color: red;
 }
+
 .w2 {
     color: blue;
 }
+
 .w3 {
     color: yellow;
 }
+
 .w4 {
     color: green;
 }
+
 .w5 {
     color: rgb(255, 60, 0);
 }
+
 .w6 {
     color: palevioletred;
 }
+
 .w7 {
     color: purple;
 }
+
 .w8 {
     color: rgb(226, 36, 147);
 }
-
 
 footer{
     height: auto;
@@ -265,7 +250,6 @@ footer{
     font-size: 25px;
     text-align: center;
     text-shadow: 1.5px 1.5px 1.5px  black ;
- 
 }
 
 .derechos {
@@ -305,55 +289,48 @@ button:hover{
 
 @media only screen and (min-width:768px) {
 
-        .headerfrase{
-    
-            font-size: 25px;
-        }
-        li{
-           
-            font-size: 20px;
-            
-           
-        }
-        h1{
-            font-size: 25px;
-        }
-        h2{font-size: 25px;}
-        article{font-size: 25px;}
-
-    
-
-
-}
-@media only screen and (min-width:1200px) {
- 
     .headerfrase{
-    
-        font-size: 30px;
-    }
-    nav .lista{
-        flex-direction: row;
-        justify-content: space-evenly;
-        border: solid 1px black;
-        
+    font-size: 25px;
     }
 
-    li{
-        display: inline;
-        font-size: 22px;
-        border: 0cm;
-       
+    li{     
+    font-size: 20px;     
     }
 
     h1{
-        font-size: 30px;
+    font-size: 25px;
     }
-    h2{font-size: 30px;}
-    article{font-size: 30px;}
-   
-    
-    
-   
-    
+        
+    article{
+    font-size: 25px;
+    }
+
+}
+
+@media only screen and (min-width:1200px) {
+ 
+    .headerfrase{
+    font-size: 30px;
+    }
+
+    nav .lista{
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: solid 1px black;   
+    }
+
+    li{
+    display: inline;
+    font-size: 22px;
+    border: 0cm;  
+    }
+
+    h1{
+     font-size: 30px;
+    }
+
+    article{
+    font-size: 30px;
+    }   
  
 }    

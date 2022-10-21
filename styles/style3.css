@@ -11,43 +11,35 @@ html{
     scroll-behavior: smooth;
 }
 
-
 header{
-    
     height: auto;
     width: auto;
     background-color: #11f1a6;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%2351edc7' fill-opacity='1'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
     padding: 10px;
     font-family: 'Shadows Into Light';
-    border: 1px solid black;    
-   
+    border: 1px solid black;     
 }
 
 .header1{
     display: flex;
     flex-wrap: nowrap;
-    
 }
+
 .header1 img{
     flex: 1;
     width: 100px;
     animation-name: ampliacion;
     animation-duration: 4s;
-    
-    
-
 }
 
 @keyframes ampliacion {
     from {right: 100% ;
         width: 200%;
-    }
- 
-    
+    } 
 }
+
 .headerfrase{
-    
     font-size: 18px;
     align-self: center;
     text-align: center;
@@ -57,10 +49,8 @@ header{
     transform: rotate(6deg);
     animation-name: aparicion;
     animation-duration: 10s;
-    
-   
-
 }
+
 @keyframes aparicion {
    0% {
     opacity: 0;
@@ -70,10 +60,9 @@ header{
    }
  100%{
     opacity: 1;
- }
+    }
     
 }
-
 
 nav{
     background-color: #11f1a6;
@@ -82,22 +71,17 @@ nav{
     border: 1px solid black;
     animation-name: ampliacion;
     animation-duration: 5s;
-    
-    
-
 }
+
 @keyframes ampliacion {
     from {right: 100% ;
         width: 200%;
     }
 }
 
-
 nav .lista{
     display: flex;
     flex-direction: column;
-    
-  
 }
 
 li {
@@ -108,8 +92,6 @@ li {
     text-align: center;
     font-weight: 900;
     text-decoration: none;
-    
-    
 }
 
 a{
@@ -119,6 +101,7 @@ a{
 a:hover{ 
     text-shadow: 3px 3px 3px black;
 }
+
 section{    
     width: auto;
     height: auto;
@@ -128,6 +111,18 @@ section{
     padding: 10px;  
 }
 
+h1{ 
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    box-shadow: 10px 5px 5px black;    
+}
+
+
 .lista a:hover{ 
     text-shadow: 3px 3px 3px black;
 }
@@ -135,30 +130,37 @@ section{
 .w1 {
     color: red;
 }
+
 .w2 {
     color: blue;
 }
+
 .w3 {
     color: yellow;
 }
+
 .w4 {
     color: green;
 }
+
 .w5 {
     color: rgb(255, 60, 0);
 }
+
 .w6 {
     color: palevioletred;
 }
+
 .w7 {
     color: purple;
 }
+
 .w8 {
     color: rgb(226, 36, 147);
 }
+
 h2 {
     font-size: 18px;
-    border: 2px solid black;
     font-family: 'Shadows Into Light', cursive;
     color: aliceblue;
     border-top: 3px dotted green;
@@ -167,24 +169,23 @@ h2 {
     border-right: 2px dotted yellow;
     border-radius: 20%;
     box-shadow: 10px 5px 5px black;
-    text-align: center;
-    
-    
+    text-align: center;   
+   
 }
 
-
 .contenedor{
-    
     width: auto;
     height: auto;
     margin: auto;
     display: grid;
     grid-template-columns:  auto(2, 1fr);
-    grid-template-rows: auto (5, 2fr);
-    grid-gap: 1cm;
-    padding: 10px;
-    margin: 1cm;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-gap: 2cm;
+    padding: 20px;
+    
+    
 }
+
 .contenedor img {
     object-fit: cover;
     max-width: 100%;
@@ -193,22 +194,23 @@ h2 {
     border: 2px solid black;
     box-shadow: 10px 5px 5px black;
   }
+
   .video {
     overflow:hidden;
-    padding-bottom:200px;
+    padding-bottom:50px;
     position:relative;
-    height:0;
     border: 2px solid black;
     box-shadow: 10px 5px 5px black;
-    margin: 1cm;
-   
+    height: 200px;
+    
   }
+
   .video iframe{
-   
     height:100%;
     width:100%;
     position:absolute;
 }
+
 .button{
     background-color: gray;
     text-align: center;
@@ -223,15 +225,10 @@ h2 {
     border-radius: 10%;
     font-family: 'Shadows Into Light', cursive; 
     width: 200px;
-    
 }
+
 section .descargas1 {
     text-align: center;
-    
-    
-    
-    
-    
 }
 
 footer{
@@ -276,113 +273,135 @@ footer{
     box-shadow: 10px 5px 5px black;
     text-shadow: 3px 3px 3px black;
 }
+
 @media only screen and (min-width:768px) {
     
     .headerfrase{
-    
         font-size: 25px;
     }
+
     li{
-       
         font-size: 20px;
-        
-       
     }
+
     h1{
         font-size: 25px;
     }
-    article{font-size: 25px;}
+
+    article{
+        font-size: 25px;
+    }
     
     section p {
         font-size: 25px;
     }
+
     .contenedor{
-        grid-template-columns:      1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns:auto auto  ;
+        grid-template-rows: auto auto auto auto ;
+       align-content: flex-end;
     }
+
     .imagenes1{
         grid-column: 3/4;
-        grid-row: 1/3;
-    }
-    .imagenes2{
-        grid-column: 2/3;
         grid-row: 1/2;
     }
-    .imagenes3{
+
+    .imagenes2{
         grid-column: 1/2;
-        grid-row: 1/3;
+        grid-row: 2/3;
     }
+
+    .imagenes3{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .imagenes4{
+        grid-column: 2/4;
+        grid-row: 2/3; 
+    }
+
     .video{
         grid-column: 1/4;
         grid-row: 3/4;
-        
+        height: 300px;
     }
+
     .descargas1{
         grid-column: 1/4;
         grid-row: 4/5;
-
     }
-    
-
-
 }
 
     @media only screen and (min-width:1200px) {
 
-    
+
         .headerfrase{
-        
             font-size: 30px;
         }
+        
         nav .lista{
             flex-direction: row;
             justify-content: space-evenly;
-            border: solid 1px black;
-            
+            border: solid 1px black;  
         }
     
         li{
             display: inline;
             font-size: 22px;
             border: 0cm;
-           
         }
     
         h1{
             font-size: 30px;
         }
-        .header h2{font-size: 30px;}
+
+        .header h2{
+            font-size: 30px;
+        }
     
-        article{font-size: 30px;}
+        article{
+            font-size: 30px;
+        }
+
         section p {
             font-size: 30px;
         }
+
         .contenedor{
-            grid-template-columns:      1fr 1fr 1fr 1fr  ;
-        grid-template-rows: 1fr 1fr 1fr 1fr ;
+            grid-template-columns: 200px 200px auto ;
+            grid-template-rows: 200px 200px 200px auto ;
         }
+
         .imagenes1{
             grid-column: 1/2;
             grid-row: 1/3;
         }
+
         .imagenes2{
             grid-column: 4/5;
-            grid-row:1/3 ;
+            grid-row:1/2 ;
         }
+
         .imagenes3{
             grid-column:2/4 ;
             grid-row:1/3 ;
         }
+
+        .imagenes4{
+            grid-column:4/5 ;
+            grid-row:2/3 ;
+        }
+
         .video{
             grid-column:1/5 ;
             grid-row:3/4 ;
-            
         }
+
         .descargas1{
-            grid-column:2/4 ;
-            grid-row:4/5 ;
-    
+            grid-column:1/5 ;
+            grid-row:5/6 ;
         }
         
-    
-    }
+ }

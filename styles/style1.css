@@ -11,9 +11,7 @@ html{
     scroll-behavior: smooth;
 }
 
-
-header{
-    
+header{   
     height: auto;
     width: auto;
     background-color: #11f1a6;
@@ -21,33 +19,28 @@ header{
     padding: 10px;
     font-family: 'Shadows Into Light';
     border: 1px solid black;    
-   
+    
 }
 
 .header1{
     display: flex;
     flex-wrap: nowrap;
-    
 }
+
 .header1 img{
     flex: 1;
     width: 100px;
     animation-name: ampliacion;
     animation-duration: 4s;
-    
-    
-
 }
 
 @keyframes ampliacion {
     from {right: 100% ;
         width: 200%;
     }
- 
-    
 }
-.headerfrase{
-    
+
+.headerfrase{ 
     font-size: 18px;
     align-self: center;
     text-align: center;
@@ -58,9 +51,8 @@ header{
     animation-name: aparicion;
     animation-duration: 10s;
     
-   
-
 }
+
 @keyframes aparicion {
    0% {
     opacity: 0;
@@ -68,12 +60,10 @@ header{
    50%{
     opacity: 0;
    }
- 100%{
+    100%{
     opacity: 1;
- }
-    
+ }    
 }
-
 
 nav{
     background-color: #11f1a6;
@@ -82,22 +72,17 @@ nav{
     border: 1px solid black;
     animation-name: ampliacion;
     animation-duration: 5s;
-    
-    
-
 }
+
 @keyframes ampliacion {
     from {right: 100% ;
         width: 200%;
     }
 }
 
-
 nav .lista{
     display: flex;
-    flex-direction: column;
-    
-  
+    flex-direction: column;  
 }
 
 li {
@@ -108,8 +93,6 @@ li {
     text-align: center;
     font-weight: 900;
     text-decoration: none;
-    
-    
 }
 
 a{
@@ -119,16 +102,16 @@ a{
 a:hover{ 
     text-shadow: 3px 3px 3px black;
 }
+
 h1{ 
     margin-top: 1cm;
     margin-bottom: 1cm;
-    font-size: 25px;
+    font-size: 20px;
     padding: 10px;
     border: 2px solid black;
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
-    box-shadow: 10px 5px 5px black;
-    
+    box-shadow: 10px 5px 5px black;    
 }
 
 section{    
@@ -139,6 +122,7 @@ section{
     background-size: cover;
     padding: 10px;
 }
+
 .iproductos{
     width: auto;
     height: auto;
@@ -147,8 +131,7 @@ section{
     grid-template-columns:  1fr;
     grid-gap: 1cm;
     padding: 20px;
-    margin: 1cm;
-    
+    margin: 1cm;    
 }
 
 .iproductos div img {
@@ -158,56 +141,45 @@ section{
     border-radius: 2%;
     border: 2px solid black;
     box-shadow: 10px 5px 5px black;
-    
-    
-
-   
-    
-    
 }
 
 img:hover {
-scale: 1.05;
-transform: rotate(-5deg);
-filter: saturate(1.5) brightness(130%);
-
-
-
-
-
-
-  }
-
-
-
-
-
+    scale: 1.05;
+    transform: rotate(-5deg);
+    filter: saturate(1.5) brightness(130%);
+}
 
 .w1 {
     color: red;
 }
+
 .w2 {
     color: blue;
 }
+
 .w3 {
     color: yellow;
 }
+
 .w4 {
     color: green;
 }
+
 .w5 {
     color: rgb(255, 60, 0);
 }
+
 .w6 {
     color: palevioletred;
 }
+
 .w7 {
     color: purple;
 }
+
 .w8 {
     color: rgb(226, 36, 147);
 }
-
 
 footer{
     height: auto;
@@ -258,133 +230,152 @@ footer{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
+
     .tazas1 {
         grid-column: 1/2;
         grid-row: 1/3;
     }
+
     .tazas2 {
         grid-column: 3/4 ;
         grid-row: 1/3 ;
     }
+
     .tazas3 {
         grid-column: 2/3;
         grid-row: 1/2;
     }
+
     .tazas4 {
         grid-column: 2/3;
         grid-row: 2/3;
     }
+
     .tazas5 {
         grid-column: 4/5 ;
         grid-row: 1/2;
     }
+
     .tazas6 {
         grid-column: 4/5 ;
         grid-row: 2/3;
     }
+
     .tazas7 {
         grid-column: 1/3;
         grid-row: 3/4;
     }
+
     .tazas8 {
         grid-column: 3/5 ;
         grid-row: 3/4;
     }
+
     .headerfrase{
-    
         font-size: 25px;
     }
+    
     li{
-       
         font-size: 20px;
-        
-       
     }
+
     h1{
         font-size: 25px;
     }
-    h2{font-size: 25px;}
-    article{font-size: 25px;}
+
+    h2{
+        font-size: 25px;
+    }
+
+    article{
+        font-size: 25px;
+    }
 }
 
 @media only screen and (min-width:1200px) {
 
     section .iproductos{
         grid-template-columns: 1fr 1fr 1fr 1fr;
-       
-        
-        
     }
+
     .iproductos div img{
         width: 80%;
-    height: 80%;
+        height: 80%;
     }
+    
     img:hover {
         scale: 1.10;
         transform: rotate(-10deg);
     }
+
     .tazas1 {
         grid-column: 1/3;
         grid-row: 1/2;
     }
+
     .tazas2 {
         grid-column: 3/5 ;
         grid-row: 1/2 ;
     }
+
     .tazas3 {
         grid-column: 1/2;
         grid-row: 2/3;
     }
+
     .tazas4 {
         grid-column: 2/3;
         grid-row: 2/3;
     }
+
     .tazas5 {
         grid-column: 3/5 ;
         grid-row: 2/3;
     }
+
     .tazas6 {
         grid-column: 1/2 ;
         grid-row: 3/4;
     }
+
     .tazas7 {
         grid-column: 2/3;
         grid-row: 3/4;
     }
+
     .tazas8 {
         grid-column: 3/5 ;
         grid-row: 3/4;
     }
+
     .headerfrase{
-    
         font-size: 30px;
     }
+
     nav .lista{
         flex-direction: row;
         justify-content: space-evenly;
-        border: solid 1px black;
-        
+        border: solid 1px black; 
     }
 
     li{
         display: inline;
         font-size: 22px;
         border: 0cm;
-       
     }
 
     h1{
         font-size: 30px;
     }
-    h2{font-size: 30px;}
-    article{font-size: 30px;}
 
-   
+    h2{
+    font-size: 30px;
+    }
     
-    
-   
-    
- 
+    article{
+        font-size: 30px;
+    }
+
 }    
 
 
